@@ -414,6 +414,9 @@
 	{
 		padding: 5em 0em;
 		text-align: center;
+        align-content: center;
+        justify-content: center;
+        color: red;
 	}
 	
 	#page .button
@@ -562,5 +565,5 @@
     #two-column a{
     font-size: 5em;
     }
- 
+
     

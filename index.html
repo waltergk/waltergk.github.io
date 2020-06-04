@@ -19,11 +19,12 @@ Released   : 20140309
 <link href="http://fonts.googleapis.com/css?family=Varela" rel="stylesheet" />
 <link href="style.css" rel="stylesheet" type="text/css" media="all" />
 <link href="fonts.css" rel="stylesheet" type="text/css" media="all" />
-
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+<script src="clicker.js"></script> 
 <!--[if IE 6]><link href="default_ie6.css" rel="stylesheet" type="text/css" /><![endif]-->
 
 </head>
-<body>
+<body onload="Ocultar()">
 	<div id="header-wrapper">
 	<div id="header" >
 		<div id="logo">
@@ -74,27 +75,27 @@ Released   : 20140309
 			<li><a target=”_blank” href="https://waltergk.itch.io" class="button">Todos mis juegos</a></li>
 		</ul>
 	</div>
-	<div id="featured">
+	<!--<div id="featured">-->
 		<div class="containers">
 			<div class="title">
-				<h2>Aqui pondria mis premios si tendria alguno</h2>
-				<span class="byline">Pero no tengo asique...</span> </div>
-			<p>Puesto <strong>27#</strong> en <a target=”_blank” href="https://itch.io/jam/prejamskirmish2020" rel="nofollow">Pirate Jam Pre-Jam Skirmish 2020</a></p>
+                <h2>1# en<a target=”_blank” href="https://itch.io/jam/easy-jam" style="text-decoration: none" > Easy Jam</a> (8 Bits to Infinity)</h2>
+			<p> Interstellar fishing</p>
 		</div>
 		<ul class="actions">
-			<li><a target=”_blank” href="https://waltergk.itch.io/bug-hunter" class="button">Probar el juego</a></li>
+			<li><a target=”_blank” href="https://waltergk.itch.io/crossing-fish" class="button">Probar el juego</a></li>
 		</ul>
 	</div>
 	<div id="pages" >
 		<div class="title">
-			<h2>Otros proyectos</h2>
-			<span class="byline">Los pondria aca si tuviera alguno</span> </div>
-		<p>La idea era poner imagenes interesantes de mis proyectos pero bueno</p>
+			<h2>JavaScript</h2>
+			<span class="byline">Click en el boton</span> </div>
+            <div id="juego" >
+                <img id="image" src="Cookie.png" onclick="Apretar()" >
+            </div>
 		<ul class="actions">
-			<li><a target=”_blank” href="https://github.com/waltergk" class="button">Perfil de git-hub</a></li>
+			<li><a id="Boton" class="button" onclick="Mostrar()">Boton</a></li>
 		</ul>
 	</div>
-    <div id="contacto"></div>
     <div id="algo">
         <div class="title">
             <h2>Contacto</h2>

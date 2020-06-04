@@ -30,14 +30,17 @@
         text-align: center;
     }
     
-	.container
+	.containers
 	{
+        padding-top: 1%;
+/*
         display: flex;
         flex-wrap: wrap;
         flex-direction: row;
 		overflow: hidden;
 		margin: 0em auto;
 		width: 1000px;
+*/
 	}
     
     .title{
@@ -45,7 +48,6 @@
         color: aliceblue;
         font-size: 2em;
         margin-bottom: 5%;
-        margin-top: 8%;
     }
 
     .title h2{
@@ -128,6 +130,7 @@
     
     #banner
     {
+        margin-top: 8%;
         display: flex;
         flex-direction: column;
     }
@@ -181,13 +184,16 @@
 	}
     #pages
     {
+        padding-top: 1%;
         background: black;
     }
     #algo{
+        padding-top: 1%;
         background: #6a4949;
     }
     
     #proyectos{
+        padding-top: 1%;
         background: #31304b;
     }
 
@@ -214,3 +220,13 @@
 	#footer
 	{
 	}
+    #image{
+        height: 80px;
+        width: 80px;
+    }
+    #juego{
+        height: 80px;
+        display: flex;
+        align-content: center;
+        justify-content: center;
+    }
