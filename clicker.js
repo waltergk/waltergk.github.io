@@ -16,18 +16,17 @@
             x+=valor;
             $('h1').text(x);
             $("#image").stop();
-            $("#image").animate({height: '55px'},50);
-            $("#image").animate({height:"50px"},50); 
+            $("#image").animate({height: '85px', width:'85px'},50);
+            $("#image").animate({height:"80px" ,width:'80px'},50); 
             
             if (x>=10 && $('button').length<1){
-                $('#juego').append('<a id="upgrade">Upgrade cost 10</a>');
-                $('#juego').append('<button onclick="Autoclick()">Autoclick</button>');
-                
+                 $('#upgrades').append('<button onclick="Autoclick()">Autoclick</button>');
+                $('#upgrades').append('<a id="upgrade">Upgrade cost 10</a>');               
             }
             if (x>=25 && $('button').length<2){
                 $('#upgrade').after('<a id="upgrade2">Upgrade cost 25</a>');
                 $('#upgrade').after('<button  onclick="Doblear()">2x income</button>');
-                
+   
             }
         }
         function Doblear(){

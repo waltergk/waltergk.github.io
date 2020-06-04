@@ -225,8 +225,14 @@
         width: 80px;
     }
     #juego{
-        height: 80px;
+        height: 100px;
         display: flex;
-        align-content: center;
-        justify-content: center;
+        flex-flow: column;
+        align-items: center;
     }
+#upgrades{
+    display: flex;
+    flex-flow: row;
+    align-items: center;
+    justify-content: space-around;
+}
