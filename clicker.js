@@ -7,9 +7,11 @@
 
         function Ocultar(){
             $('#juego').hide();
+            $('#upgrades').hide();
         }
         function Mostrar(){
-           $('#juego').slideToggle();
+            $('#juego').slideToggle();
+            $('#upgrades').slideToggle();
         }
         
         function Apretar(){
@@ -19,13 +21,13 @@
             $("#image").animate({height: '85px', width:'85px'},50);
             $("#image").animate({height:"80px" ,width:'80px'},50); 
             
-            if (x>=10 && $('button').length<1){
-                 $('#upgrades').append('<button onclick="Autoclick()">Autoclick</button>');
+            if (x>=10 && $('#upgrade').length<1){
+                $('#upgrades').append('<a id="Boton" class="button" onclick="Autoclick()">Autoclick</a>');
                 $('#upgrades').append('<a id="upgrade">Upgrade cost 10</a>');               
             }
-            if (x>=25 && $('button').length<2){
+            if (x>=25 && $('#upgrade2').length<1){
                 $('#upgrade').after('<a id="upgrade2">Upgrade cost 25</a>');
-                $('#upgrade').after('<button  onclick="Doblear()">2x income</button>');
+                $('#upgrade').after('<a id="Boton" class="button" onclick="Doblear()">2x income</a>');
    
             }
         }
